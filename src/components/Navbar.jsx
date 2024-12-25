@@ -1,45 +1,17 @@
-import { Link } from "react-scroll";
-
 const Navbar = () => {
   return (
     <>
       <div className="navbar container h-20 w-full flex">
-        <h1 className="text-white text-4xl mt-10 ml-32 sm:ml-48 hover:text-red-500 ">
-          Anuj
-        </h1>
-        
-          <p className="text-white mt-12 ml-96 text-2xl hover:underline hover:text-red-500 cursor-pointer">
-            Home
-          </p>{" "}
-        
-        <Link to="About" spy={true} smooth={true} offset={-212} duration={500}>
-          <p className="text-white mt-12 ml-20 text-2xl hover:underline hover:text-red-500 cursor-pointer">
-            About
-          </p>
-        </Link>
-        <Link
-          to="Projects"
-          spy={true}
-          smooth={true}
-          offset={-50}
-          duration={500}
-        >
-          <p className="text-white mt-12 ml-20 text-2xl hover:underline hover:text-red-500 cursor-pointer">
-            Projects
-          </p>
-        </Link>
-        <Link
-          className=" w-56"
-          to="Contact"
-          spy={true}
-          smooth={true}
-          offset={-0}
-          duration={1000}
-        >
-          <p className="text-white mt-12 ml-20 mr-96 text-2xl hover:underline hover:text-red-500 cursor-pointer">
-            Contact
-          </p>
-        </Link>
+        <div className="itemsContainer sm:ml-[195px] flex h-36 ml-32 sm:w-[1160px]">
+          <div className="name w-96 mt-10">
+            <h1 className="text-white text-4xl hover:text-red-500 ">
+              Anuj Verma
+            </h1>
+          </div>
+          <div className="Message w-96 mt-12 ml-[330px] sm:ml-[350px]">
+            <p className="text-red-500 text-2xl">" Welcome To My Portfolio "</p>
+          </div>
+        </div>
       </div>
     </>
   );
