@@ -7,12 +7,11 @@ const Navbar = () => {
         <h1 className="text-white text-4xl mt-10 ml-32 sm:ml-48 hover:text-red-500 ">
           Anuj
         </h1>
-        <Link to="Home" spy={true} offset={-150} duration={500}>
-          {" "}
+        
           <p className="text-white mt-12 ml-96 text-2xl hover:underline hover:text-red-500 cursor-pointer">
             Home
           </p>{" "}
-        </Link>
+        
         <Link to="About" spy={true} smooth={true} offset={-212} duration={500}>
           <p className="text-white mt-12 ml-20 text-2xl hover:underline hover:text-red-500 cursor-pointer">
             About
