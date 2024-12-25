@@ -1,5 +1,5 @@
 import image from "../assets/Image.png";
-import { Link } from "react-scroll";
+
 
 const Banner = () => {
   return (
@@ -22,22 +22,16 @@ const Banner = () => {
               technologies like React, Tailwind, Node JS, Express, Bootsrap and
               MongoDB.
             </p>
-            <Link
-              className=" w-56"
-              to="SkillsSet"
-              spy={true}
-              smooth={true}
-              offset={-0}
-              duration={1000}
-            >
+            
+            <a href="https://www.linkedin.com/in/anuj-verma-440957242">
               {" "}
               <button
                 className="bg-blue-600 w-32 h-11 ml-32 sm:ml-48 hover:bg-red-500  mt-10  text-white"
                 style={{ borderRadius: "8px" }}
               >
-                Portfolio
+                Let's Talk
               </button>
-            </Link>
+            </a>
             
           </div>
           <div className="details mr-20 h-[350px] text-center sm:ml-20  w-[400px] overflow-x-auto no-scrollbar">
